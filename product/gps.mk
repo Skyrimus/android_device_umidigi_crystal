@@ -9,7 +9,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 PRODUCT_PACKAGES += \
     libcurl \
     libepos \
-    gps.mt6755
+    gps.mt6750
 
 # Configurations
 PRODUCT_COPY_FILES += \
