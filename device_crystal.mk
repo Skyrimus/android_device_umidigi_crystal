@@ -31,6 +31,9 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-4096-dal
 # Call hwui memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
 
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+$(shell touch $(OUT)/obj/KERNEL_OBJ/usr/export_includes)
+
 # Product common configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
